@@ -84,9 +84,28 @@ def solution(scores):
             count += 1
     return count
 
-# The following is code to output testcase. The code below is correct and you shall correct solution
+# The following is code to output testcase. The code below is correct and you shall correct solution function.
 scores = [650, 722, 914, 558, 714, 803, 650, 679, 669, 800]
 ret = solution(scores)
+
+# Press Run button to receive output.
+print("Solution: return value of the function is", ret, ".")
+
+# 7)
+def solution(sentence):
+    str = ''
+    for c in sentence:
+        if c != '.' and c != ' ':
+            str += c
+    size = len(str)
+    for i in range(size // 2):
+        if str[i] != str[size - 1 - i]:
+            return False
+    return True
+
+# The following is code to output testcase. The code below is correct and you shall correct solution function.
+sentence1 = "never odd or even."
+ret1 = solution(sentence1)
 
 # Press Run button to receive output.
 print("Solution: return value of the function is", ret, ".")
