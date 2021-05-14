@@ -61,7 +61,7 @@ def solution(arr):
     right = len(arr) - 1
     
     # todo : @@@ 빈칸 채우기
-    while @ @ @:
+    while left < len(arr)/2:
         # arr[left]와 arr[right]의 값을 서로 바꿈
         arr[left], arr[right] = arr[right], arr[left]
 
@@ -74,4 +74,4 @@ arr = [1, 4, 2, 3]
 ret = solution(arr)
 
 # Press Run button to receive output.
-
+print("Solution: return value of the function is ", ret, ".")
