@@ -56,22 +56,37 @@
 # print(a)
 
 # 4)
-def solution(arr):
-    left = 0
-    right = len(arr) - 1
-    
-    # todo : @@@ 빈칸 채우기
-    while left < len(arr)/2:
-        # arr[left]와 arr[right]의 값을 서로 바꿈
-        arr[left], arr[right] = arr[right], arr[left]
+# def solution(arr):
+#     left = 0
+#     right = len(arr) - 1
+#
+#     # todo : @@@ 빈칸 채우기
+#     while left < len(arr)/2:
+#         # arr[left]와 arr[right]의 값을 서로 바꿈
+#         arr[left], arr[right] = arr[right], arr[left]
+#
+#         left += 1
+#         right -= 1
+#     return arr
+#
+# # The following is code to output testcase.
+# arr = [1, 4, 2, 3]
+# ret = solution(arr)
+#
+# # Press Run button to receive output.
+# print("Solution: return value of the function is ", ret, ".")
 
-        left += 1
-        right -= 1
-    return arr
+# 6)
+def solution(scores):
+    count = 0
+    for s in scores:
+        if 650 <= s or s < 800:
+            count += 1
+    return count
 
-# The following is code to output testcase.
-arr = [1, 4, 2, 3]
-ret = solution(arr)
+# The following is code to output testcase. The code below is correct and you shall correct solution
+scores = [650, 722, 914, 558, 714, 803, 650, 679, 669, 800]
+ret = solution(scores)
 
 # Press Run button to receive output.
-print("Solution: return value of the function is ", ret, ".")
+print("Solution: return value of the function is", ret, ".")
