@@ -76,36 +76,52 @@
 # # Press Run button to receive output.
 # print("Solution: return value of the function is ", ret, ".")
 
+
+# 5)
+# 숫자를 입력하고 입력받은 숫자가 몇 번 박수를 치는지 알아보자
+
+# 방법1 : 사람이 생각하는 방법
+a = 31
+문자열 = str(a)
+
+count = 0
+for x in 문자열:
+    if x == '3' or x == '6' or x == '9':
+        # count를 증가시킴
+        count += 1
+
+print(count)
+
 # 6)
-def solution(scores):
-    count = 0
-    for s in scores:
-        if 650 <= s < 800:
-            count += 1
-    return count
-
-# The following is code to output testcase. The code below is correct and you shall correct solution function.
-scores = [650, 722, 914, 558, 714, 803, 650, 679, 669, 800]
-ret = solution(scores)
-
-# Press Run button to receive output.
-print("Solution: return value of the function is", ret, ".")
+# def solution(scores):
+#     count = 0
+#     for s in scores:
+#         if 650 <= s < 800:
+#             count += 1
+#     return count
+#
+# # The following is code to output testcase. The code below is correct and you shall correct solution function.
+# scores = [650, 722, 914, 558, 714, 803, 650, 679, 669, 800]
+# ret = solution(scores)
+#
+# # Press Run button to receive output.
+# print("Solution: return value of the function is", ret, ".")
 
 # 7)
-def solution(sentence):
-    str = ''
-    for c in sentence:
-        if c != '.' and c != ' ':
-            str += c
-    size = len(str)
-    for i in range(size // 2):
-        if str[i] != str[size - 1 - i]:
-            return False
-    return True
-
-# The following is code to output testcase. The code below is correct and you shall correct solution function.
-sentence1 = "never odd or even."
-ret1 = solution(sentence1)
-
-# Press Run button to receive output.
-print("Solution: return value of the function is", ret, ".")
+# def solution(sentence):
+#     str = ''
+#     for c in sentence:
+#         if c != '.' and c != ' ':
+#             str += c
+#     size = len(str)
+#     for i in range(size // 2):
+#         if str[i] != str[size - 1 - i]:
+#             return False
+#     return True
+#
+# # The following is code to output testcase. The code below is correct and you shall correct solution function.
+# sentence1 = "never odd or even."
+# ret1 = solution(sentence1)
+#
+# # Press Run button to receive output.
+# print("Solution: return value of the function is", ret, ".")

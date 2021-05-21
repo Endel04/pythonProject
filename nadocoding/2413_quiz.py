@@ -170,26 +170,26 @@ get_three_six_nine() 함수를 만든다. 이 함수에 숫자를 입력하면 3
 힌트: 문자열 함수 중에 특정 글자를 세는 함수가 있음
 '''
 
-# def get_three_six_nine(i):
-#     # if i % 10 == 3 or i % 10 == 6 or i % 10 == 9:
-#     cnt = str(i).count('3') + str(i).count('6') + str(i).count('9')
-#     if cnt == 0:
-#         return i
-#     else :
-#         return "짝" * cnt
-#     # else:
-#     #     return i
-#
-# result = get_three_six_nine(1)
-# print(result)   #1
-# result = get_three_six_nine(3)
-# print(result)   #짝
-# result = get_three_six_nine(16)
-# print(result)   #짝
-# result = get_three_six_nine(31)
-# print(result)   #짝
-# result = get_three_six_nine(36)
-# print(result)   #짝짝
+def get_three_six_nine(i):
+    # if i % 10 == 3 or i % 10 == 6 or i % 10 == 9:
+    cnt = str(i).count('3') + str(i).count('6') + str(i).count('9')
+    if cnt == 0:
+        return i
+    else :
+        return "짝" * cnt
+    # else:
+    #     return i
+
+result = get_three_six_nine(1)
+print(result)   #1
+result = get_three_six_nine(3)
+print(result)   #짝
+result = get_three_six_nine(16)
+print(result)   #짝
+result = get_three_six_nine(31)
+print(result)   #짝
+result = get_three_six_nine(36)
+print(result)   #짝짝
 
 print()
 
