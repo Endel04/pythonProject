@@ -85,10 +85,10 @@ a = 31
 문자열 = str(a)
 
 count = 0
-for x in 문자열:
-    if x == '3' or x == '6' or x == '9':
-        # count를 증가시킴
+while a:
+    if a % 10 in [3, 6, 9]:
         count += 1
+    a = a // 10
 
 print(count)
 
