@@ -78,19 +78,25 @@
 
 
 # 5)
-# 숫자를 입력하고 입력받은 숫자가 몇 번 박수를 치는지 알아보자
+# 1부터 입력받은 숫자까지 몇 번 박수를 치는지 알아보자
 
 # 방법1 : 사람이 생각하는 방법
-a = 31
-문자열 = str(a)
 
-count = 0
-while a:
-    if a % 10 in [3, 6, 9]:
-        count += 1
-    a = a // 10
+def solution(number):
+   count = 0
+   for i in range(1, number + 1):  # for(int i=1; i<number+1)
+       current = i
+       temp = count
+       while current != 0:
+           if current % 10 == 3 or current % 10 == 6 or current % 10 == 9:
+               count += 1
+           current = current / 10
+   return count
 
-print(count)
+#The following is code to output testcase.
+number = 40
+ret = solution(number)
+print(number)
 
 # 6)
 # def solution(scores):
