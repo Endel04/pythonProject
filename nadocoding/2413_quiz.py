@@ -259,23 +259,68 @@ print()
 print()
 
 # 4-2)
-def get_compliment(word):
-    if '고구마' in word:
-        return "왓쇼이!"
-    elif '맛있는' in word:
-        return "우마이!"
-    elif '놀랄 만한' in word:
-        return "요모야..!"
-    elif '황당한' in word:
-        return "요모야..!"
-    else:
-        return "으무!"
+# def get_compliment(word):
+#     if '고구마' in word:
+#         return "왓쇼이!"
+#     elif '맛있는' in word:
+#         return "우마이!"
+#     elif '놀랄 만한' in word:
+#         return "요모야..!"
+#     elif '황당한' in word:
+#         return "요모야..!"
+#     else:
+#         return "으무!"
+#
+# result = get_compliment('고구마 밥')
+# print(result)  # 왓쇼이!
+# result = get_compliment('맛있는 라멘')
+# print(result)  # 우마이!
+# result = get_compliment('황당한 일')
+# print(result)  # 요모야..!
+# result = get_compliment('재밌구나!')
+# print(result)  # 으무!
 
-result = get_compliment('고구마 밥')
-print(result)  # 왓쇼이!
-result = get_compliment('맛있는 라멘')
-print(result)  # 우마이!
-result = get_compliment('황당한 일')
-print(result)  # 요모야..!
-result = get_compliment('재밌구나!')
-print(result)  # 으무!
+print()
+
+'''
+Quiz5-1. 모듈이란?
+
+함수나 변수 또는 클래스 들을 모아 놓은 파일
+
+Quiz5-2. 패키지란?   
+
+모듈을 디렉토리 형식으로 구조화 한 것
+
+Quiz5-3. theater_module.py 모듈(파일)의 price 함수를 p학번 라는 이름으로 호출 하도록 import문을 작성하세요
+
+import theater_module as p학번
+p학번.price(1)
+
+Quiz5-4. __all__의 역할은?
+
+해당 디렉토리에서 import * 할 경우 이곳에 정의된 모듈만 import 된다
+
+Quiz5-5. 지금 파이썬 파일을 직접 실행할 때만 실행되고, 다른 모듈에서 import할 때는 실행되지 않도록 하는 제어문은?
+
+if __name__ == "__main__"
+
+Quiz5-6. travel 패키지(폴더) 안에 vietnam.py 모듈(파일) 안의 VietnamPackage 클래스를 생성하고 detail 함수를 호출하는 < 가 >, < 나 >, < 다 > 에 들어갈 각 방법은?
+import travel.vietnam
+< 가 > 
+
+trip_to = travel.vietnam.VietnamPackage()
+trip_to.detail()
+
+from travel import vietnam
+< 나 > 
+
+trip_to = vietnam.VietnamPackage()
+trip_to.detail()
+
+from travel.vietnam import VietnamPackage
+< 다 > 
+
+trip_to = VietnamPackage()
+trip_to.detail()
+
+'''

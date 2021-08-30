@@ -4,7 +4,7 @@ def print_menu():
     print('1. 상품 검색')
     print('2. 판매할 상품 올리기')
     print('3. 인기 상품 보여주기')
-    print('4. 올라온 상품 전체 보여주기')
+    print('4. 상품 전체 보여주기')
     print('5. 종료하기')
 
     num = input('메뉴를 선택하세요 : ')
@@ -21,13 +21,13 @@ def main():
             KNY_GooDS.search_product()
         elif num == '2':
             # 판매할 상품 올리기
-            pass
+            KNY_GooDS.set_product()
         elif num == '3':
             # 인기 상품 보여주기
-            pass
+            KNY_GooDS.show_popular()
         elif num == '4':
-            # 올라온 상품 전체 보여주기
-            pass
+            # 상품 전체 보여주기
+            KNY_GooDS.show_product()
         elif num == '5':
             # 종료하기
             break

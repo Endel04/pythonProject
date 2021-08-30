@@ -9,11 +9,8 @@
 #         sale_price = price * 0.15
 #     return price - sale_price
 #
-# result = solution(2500, "V")
-# print(result) # 2125
-# result = solution(5000, "S")
-# print(result) # 4750
-
+# print(solution(2500, 'V'))
+# print(solution(96900, 'S'))
 
 # 2)
 # def solution(month, day):
@@ -82,21 +79,21 @@
 
 # 방법1 : 사람이 생각하는 방법
 
-# def solution(number):
-#    count = 0
-#    for i in range(1, number + 1):  # for(int i=1; i<number+1)
-#        current = i
-#        temp = count
-#        while current != 0:
-#            if current % 10 == 3 or current % 10 == 6 or current % 10 == 9:
-#                count += 1
-#            current = current / 10
-#    return count
-#
-# #The following is code to output testcase.
-# number = 40
-# ret = solution(number)
-# print(number)
+def solution(number):
+   count = 0
+   for i in range(1, number + 1):  # for(int i=1; i<number+1)
+       current = i
+       temp = count
+       while current != 0:
+           if current % 10 == 3 or current % 10 == 6 or current % 10 == 9:
+               count += 1
+           current = current / 10
+   return count
+
+#The following is code to output testcase.
+number = 40
+ret = solution(number)
+print(number)
 
 # 6)
 # def solution(scores):
@@ -127,44 +124,44 @@
 #
 # # The following is code to output testcase. The code below is correct and you shall correct solution function.
 # sentence1 = "never odd or even."
-# ret1 = solution(sentence1)
+# ret = solution(sentence1)
 #
 # # Press Run button to receive output.
 # print("Solution: return value of the function is", ret, ".")
 
 # 8)
-arr = 'abcdefg'
-
-# print(arr[len(arr)]) : 에러
-print(arr[3]) # d
-print(arr[6]) # g
-print(arr[0]) # a
-print(arr[-1]) # g
+# arr = 'abcdefg'
+#
+# # print(arr[len(arr)]) : 에러
+# print(arr[3]) # d
+# print(arr[6]) # g
+# print(arr[0]) # a
+# print(arr[-1]) # g
 
 # 9)
 ###########################
 # 라이브러리 사용
-import pandas as pd
-
-###########################
-# 파일로부터 데이터 읽어오기
-파일경로 = 'https://raw.githubusercontent.com/blackdew/tensorflow1/master/csv/lemonade.csv'
-레모네이드 = pd.read_csv(파일경로)
-
-###########################
-# 데이터의 모양확인
-print(레모네이드.shape)
-
-###########################
-# 데이터 칼럼이름 확인
-print(레모네이드.columns)
-
-###########################
-# 독립변수와 종속변수 분리
-독립 = 레모네이드[['온도']]
-종속 = 레모네이드[['판매량']]
-print(독립.shape, 종속.shape)
-
-###########################
-# 각각의 데이터 확인해보기
-print(레모네이드.head())
+# import pandas as pd
+#
+# ###########################
+# # 파일로부터 데이터 읽어오기
+# 파일경로 = 'https://raw.githubusercontent.com/blackdew/tensorflow1/master/csv/lemonade.csv'
+# 레모네이드 = pd.read_csv(파일경로)
+#
+# ###########################
+# # 데이터의 모양확인
+# print(레모네이드.shape)
+#
+# ###########################
+# # 데이터 칼럼이름 확인
+# print(레모네이드.columns)
+#
+# ###########################
+# # 독립변수와 종속변수 분리
+# 독립 = 레모네이드[['온도']]
+# 종속 = 레모네이드[['판매량']]
+# print(독립.shape, 종속.shape)
+#
+# ###########################
+# # 각각의 데이터 확인해보기
+# print(레모네이드.head())

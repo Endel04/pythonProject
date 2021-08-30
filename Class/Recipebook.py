@@ -41,15 +41,13 @@ class RecipeBook:
                 print(recipe)
                 searched_recipe.append(recipe)
 
-        if len(searched_recipe) == '':  # 검색한 레시피가 없으면
+        if len(searched_recipe) == 0:  # 검색한 레시피가 없으면
             # 추가할지 물어보기
-            answer = input('찾는 레시피가 없습니다. 레시피를 추가하시겠습니까?')
-            print('1 : yes, 1 이외의 숫자 : no')
+            answer = input('찾는 레시피가 없습니다. 레시피를 추가하시겠습니까? 1 : yes, 1 이외의 숫자 : no')
 
             if answer == 1:   # 1을 입력했을 때
                 # 레시피 추가하기
                 self.add_recipe()
-
             else:   # 1이 아닌 다른 숫자를 입력했을 때
                 return
 
@@ -58,7 +56,7 @@ class RecipeBook:
         # 빈 set 생성
         all_ingrediant = set()
 
-        # 레시피북에 레시피 재료 set에 넣기
+        # 레시피북의 레시피 재료 set에 넣기
         for recipe in self.recipe_list:
             for ingrediant in recipe.ingrediant:
                 all_ingrediant.add(ingrediant)
@@ -80,9 +78,9 @@ class RecipeBook:
                 
     def init_recipe(self):
         떡볶이 = Recipe('떡볶이')
-        떡볶이.people = 2
-        떡볶이.video = 'youtube.com'
-        떡볶이.ingrediant = {'물': '100', '떡': '100', '고추장': '100'}
+        떡볶이.people = 2   # 1
+        떡볶이.video = 'youtube.com'   # ''
+        떡볶이.ingrediant = {'물': '100', '떡': '100', '고추장': '100'}   # {}
         
         self.recipe_list.append(떡볶이)
 
