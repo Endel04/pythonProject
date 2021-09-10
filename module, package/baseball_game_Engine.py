@@ -30,9 +30,9 @@ def check(guess, answer):
         elif guess[i] in answer:
             ball += 1
 
-    for i in range(3):
-        for j in range(3):
-            if guess[i] == answer[j]:
+    for i, g in enumerate(guess):
+        for j, a in enumerate(answer):
+            if g == a:
                 if i == j:
                     strike += 1
                 else:
