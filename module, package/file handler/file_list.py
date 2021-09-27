@@ -3,7 +3,7 @@ import os
 
 # data = os.listdir('c:\\')  # C:\
 # data = os.listdir('..')  # 상위 디렉토리
-data = os.listdir('.')  # 현재 디렉토리
+# data = os.listdir('.')  # 현재 디렉토리
 data = os.listdir('my_directory')  # 하위 디렉토리
 
 
