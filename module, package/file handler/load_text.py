@@ -5,6 +5,12 @@ print(data)
 
 print()
 
+with open('text.txt', 'r', encoding='utf-8')as f:
+    data = f.read()
+
+print(data)
+
+
 print('한 줄씩 읽기')
 f = open('text.txt', 'r', encoding='utf-8')
 while True:
