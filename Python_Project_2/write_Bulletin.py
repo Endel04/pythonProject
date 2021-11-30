@@ -1,4 +1,4 @@
-class write_Bullentin:
+class write_Bulletin:
     def __init__(self, title):
         # 글 제목
         self.title = title
@@ -20,11 +20,11 @@ class write_Bullentin:
         self.image = '삽입된 이미지가 없습니다!' if image == '' else image
 
     def set_content(self):
-        content = input('내용을 입력해 주세요\n\n')
+        content = input('내용을 입력해 주세요 : ')
 
         self.content = '내용을 입력해 주세요!' if content == '' else content
 
-    def set_bullentin(self):
+    def set_bulletin(self):
         self.set_title()
         self.set_image()
         self.set_content()
